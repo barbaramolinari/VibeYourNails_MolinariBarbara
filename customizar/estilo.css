@@ -32,7 +32,7 @@ section {
     display: grid;
 }
 
-/*Titulo*/
+/*Titulo - agrego transición*/
 h1.titulo {
     font-family: 'Bebas Neue', cursive;
     color: rgb(228, 70, 136);
@@ -41,6 +41,11 @@ h1.titulo {
     text-align: center;
     padding: 18px;
     margin-top: 18px;
+    transition: 5s;
+}
+
+h1.titulo:hover {
+    height: 100px;
 }
 
 /*menu*/
@@ -152,7 +157,7 @@ section {
     flex-wrap: nowrap;
 }
 
-/*Estilo de formulario*/
+/*Estilo de formulario - agrego gradiente*/
 
 .formulario {
     display: flex;
@@ -164,7 +169,7 @@ section {
     font-family: 'Bebas Neue', cursive;
     color: rgb(228, 70, 136);
     font-size: 20px;
-    background-color: white;
+    background-image: linear-gradient(to right, rgb(248, 86, 199) , rgb(247, 201, 77));
     text-align: center;
     padding: 18px;  
 }

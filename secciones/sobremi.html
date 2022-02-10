@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="descripcion"
+      content="Página de manicuria integral, esmaltado y arte en uñas"
+    />
+    <link rel="icon" href="../imagenes/nailsicon.png" />
+    <link rel="stylesheet" href="../customizar/estilo.css" />
+    <script src="https://use.fontawesome.com/b29ce011be.js"></script>
+  </head>
+
+  <body>
+    <div class="todo">
+      <header>
+        <h1 class="titulo">Vibe Your Nails</h1>
+      </header>
+      <!--Menú de navegación-->
+      <nav>
+        <ul id="menu">
+          <li><a href="../index.html">Inicio</a></li>
+          <li><a href="sobremi.html">Sobre Mi</a></li>
+          <li><a href="servicios.html">Servicios</a></li>
+          <li><a href="salon.html">Salón</a></li>
+          <li><a href="experiencias.html">Experiencias</a></li>
+        </ul>
+        <!--busqueda-->
+        <input id="busqueda" type="search" placeholder="Buscar..." />
+        <!--menu hamburguesa - rayitas al costado-->
+        <i id="hamburguesa" class="fa fa-bars"></i>
+      </nav>
+      <!--Contenido del cuerpo Sobre mí-->
+      |
+      <section>
+        <article>
+          <img
+            class="gif"
+            src="../imagenes/IMG_8060.JPG"
+            alt="Foto de Bárbara M."
+          />
+          <p>
+            Me llamo Bárbara M. y soy estudiante de la Tecnicatura de
+            Programación en UTN. Me apasionan las uñas y la programación al
+            mismo nivel. Soy manicura, estudié muchos años y realizo esmaltados
+            y diseños de nail art especializados en Anime y Cartoon. Amo lo que
+            hago tanto como a los gatos.
+          </p>
+        </article>
+
+        <article class="redes">
+          <a href="mailto:barbaramiamolinari@gmail.com"
+            ><img
+              class="social"
+              src="../imagenes/mail.jpg"
+              alt="Boton de contacto email"
+          /></a>
+          <a href="https://www.instagram.com/vibeyournails/" target="_blank"
+            ><img
+              class="social"
+              src="../imagenes/instagram.jpg"
+              alt="Boton de contacto Instagram"
+          /></a>
+          <a
+            href="https://www.linkedin.com/in/barbara-molinari/"
+            target="_blank"
+            ><img
+              class="social"
+              src="../imagenes/linkedin.png"
+              alt="Boton de contacto linkedin"
+          /></a>
+          <a href="https://github.com/barbaramolinari" target="_blank"
+            ><img
+              class="social"
+              src="../imagenes/github.png"
+              alt="Boton de contacto github"
+          /></a>
+        </article>
+
+        <article>
+          <form>
+            <fieldset class="formulario">
+              <legend class="tituloForm">Formulario de contacto</legend>
+              <label for="Usuario">Nombre: </label>
+              <input type="text" placeholder="Ingrese su nombre" id="usuario" />
+              <label for="Email">Correo Electrónico: </label>
+              <input type="email" placeholder="Ingrese su email" id="email" />
+              <label for="Phone">Ingrese su celular: </label>
+              <input type="phone" placeholder="(Opcional)" id="Phone" />
+              <textarea
+                name="Content"
+                id="message"
+                cols="30"
+                rows="10"
+                placeholder="Ingrese su mensaje"
+              ></textarea>
+              <input type="submit" value="Enviar Formulario" />
+              <input type="reset" />
+            </fieldset>
+          </form>
+        </article>
+      </section>
+      <footer>VIBE YOUR NAILS ® 2022 | DESARROLLADO POR BARBARA M.</footer>
+    </div>
+  </body>
+</html>

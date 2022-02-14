@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*fuente titulos*/
-@import url('https://fonts.googleapis.com/css2?family=Mochiy+Pop+P+One&display=swap'); /*fuente cuerpo*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap'); /*fuente nueva cuerpo*/
+
 
 /*Universal*/
 * { 
@@ -7,202 +8,122 @@
     padding: 0;
 }
 
-/*Asignación de grid a las distintas áreas*/
 
-header {
-    grid-area: header;
-}
-
-footer {
-    grid-area: footer;
-}
-
-section {
-    grid-area: section;
-}
-
-nav {
-    grid-area: nav;
-}
-
-
-/*Aplico grillas*/
-.todo,
-section {
-    display: grid;
-}
-
-/*Titulo - agrego transición*/
+/*Titulo principal*/
 h1.titulo {
     font-family: 'Bebas Neue', cursive;
     color: rgb(228, 70, 136);
-    font-size: 60px;
+    font-size: 80px;
     background-color: white;
     text-align: center;
     padding: 18px;
     margin-top: 18px;
-    transition: 5s;
 }
 
-h1.titulo:hover {
-    height: 100px;
-}
-
-/*menu*/
-nav {
-    height: 60px;
-    background-color: white;
-    text-align: center;
-}
-
-nav ul{
-    list-style: none;
-    display: inline-block;
-    padding:18px;
-    font-family: 'Bebas Neue', cursive;
-}
-
-nav ul li{
-     float: left;
-     margin-top: 20px;
-}
-
-nav ul li a {
-     color: rgb(228, 70, 136);
-     font-weight: normal;
-     text-decoration: none;
-     font-size: 20px;
-     padding: 18px;
-}
-
-/*Estilos*/
-
-body {
-    color: #000000;
-    font-family: 'Mochiy Pop P One', sans-serif;
-    font-size: 10px;
-}
-
-.todo {
-    width: 100%;
-    height: 600px;
-}
-
-header,
-footer,
-section,
-nav {
-    border-radius: 15px;
-}
-
-section {
-    background-color: #faceed;
-}
-
-nav {
-    background-color: white;
-}
-
-
-header,
-footer,
-nav {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-
-footer {
-    justify-content: center;
-    font-family: 'Mochiy Pop P One', sans-serif;
-    font-size: 6px;
-    color: black;
-    /*display: inline-block;*/
-    text-align: center;
-    margin-top: 15px;
-}
-
+/*header*/
 header {
     justify-content: center;
     padding: 30px;
 }
 
-nav ul a {
-    padding: 10px;
+/*body*/
+body {
+    color: #000000;
+    font-family: 'Roboto Slab', serif;
 }
 
-
-article {
-    background-color: white;
-    border-radius: 15px;
-    text-align: center;
-}
-
-img,
-.servicios {
-    width: 150px;
-    height: 150px;
-    border-radius: 10px;
-}
-
-section {
-    padding: 20px;
-}
-
-/*Estilo de íconos de redes*/
-.redes {
-    display: flex;
+/*footer*/
+footer {
     justify-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    font-family: 'Roboto Slab', serif;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    margin-top: 15px;
 }
 
-/*Estilo de formulario - agrego gradiente*/
-
-.formulario {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    flex-wrap: nowrap;
-    height: 350px;
-    align-items:center;
-    font-family: 'Bebas Neue', cursive;
+/*menu nuevo*/
+.nav-link {
     color: rgb(228, 70, 136);
+    font-family: 'Bebas Neue', cursive;
     font-size: 20px;
-    background-image: linear-gradient(to right, rgb(248, 86, 199) , rgb(247, 201, 77));
-    text-align: center;
-    padding: 18px;  
 }
 
-/*Estilo de página salón*/
-.espacio {
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
+/*Botón búsqueda*/
+.d-flex {
     font-family: 'Bebas Neue', cursive;
-    color: rgb(228, 70, 136);
-    text-decoration: underline;
+    font-size: 20px;   
+    margin-right: 15px;
 }
 
-h2 {
+/*texto index*/
+.texto,
+.textito {
+    font-size: 16px;
+}
+
+/*márgenes necesarios*/
+.gif,
+.textito,
+.texto,
+.social,
+.mapa,
+.botoncito {
     margin-top: 20px;
-    margin-bottom: 20px;
-    font-size: 20px;
 }
 
-/*Propiedades de imágen de salon, futuro carrousel*/
-.salon {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    align-items:center;
-}
-
-.imagsalon {
-    width: 800px;
+.gif {
+    width: 300px;
     height: 300px;
-    border-radius: 10px;
+}
+
+/*redes - sobre mi*/
+.redes {
+    display: block; 
+    margin-left: 100px; 
+}
+
+.social {
+    width: 50px;
+    height: 50px;
+}
+
+/*formulario*/
+
+.newform {
+    margin: 20px;
+}
+
+/*tarjetas*/
+.tarjetas {
+    margin-top: 40px;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fototarj {
+    width: 170px;
+    height: 170px;
+}
+
+/*titulo secundario*/
+.tituloSec {
+font-family: 'Bebas Neue', cursive;
+color: rgb(228, 70, 136);
+font-size: 22px;
+background-color: white;
+text-align: center;
+margin-top: 18px;
+text-decoration: underline;
+}
+
+/*nav*/
+nav {
+    background-color: white;
 }
 
 /*Mapa ubicación*/
@@ -212,9 +133,26 @@ h2 {
     height: 300px; 
 }
 
+/*formulario trabajá con nosotros*/
+.work {
+    margin-top: 40px;
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 160, 212);
+    border-radius: 15px;
+}
 
 
-/*Vista Mobile*/
+
+
+/*Modificaciones puntuales a realizar más adelante*/
+
+/*Vista Mobile
 @media screen and (min-width: 320px) {
 
     .todo{
@@ -234,30 +172,20 @@ h2 {
         align-items: stretch;
     }
 
-    /*modifico para que en mobile en esta parte sean dos columnas*/
+    /*modifico para que en mobile en esta parte sean dos columnas
     .boxes {
         grid-template-columns: auto auto;
         grid-template-rows: auto;
     }
 
-    /*Oculto en vista para celular*/
+    /*Oculto en vista para celular
     #menu {
         display: none;
     }
 
-    /*separa los dos elementos a los extremos laterales de la pantalla*/
-    nav {
-        display: flex;
-        justify-content: space-between;
-    }
-    #hamburguesa {
-        padding: 30px;
-    }
-    #busqueda {
-        margin: 30px;
-     }
 
-    /*Acomodar items redes*/
+
+    /*Acomodar items redes
 
     .redes {
         display: flex;
@@ -271,13 +199,13 @@ h2 {
         height: 50px;
     }
 
-    /*tamaño letra acomodado a mobile*/
+    /*tamaño letra acomodado a mobile
     .formulario {
         font-size: 16px;
     }
-}
+}*/
 
-/*pc escritorio*/
+/*pc escritorio
 @media screen and (min-width: 1200px) {
     .todo {
         grid-template-columns: auto;
@@ -296,7 +224,7 @@ h2 {
         align-items: stretch;
     }
 
-    /*modifico para que en escritorio en esta parte sean cuatro columnas*/
+    /*modifico para que en escritorio en esta parte sean cuatro columnas
     .boxes {
         grid-template-columns: auto auto auto auto;
         grid-template-rows: auto;
@@ -304,24 +232,24 @@ h2 {
 
 
 
-    /*muestra lo oculto en versión mobile*/
+    /*muestra lo oculto en versión mobile
     #menu {
         display: block;
     }
 
-    /*Oculto en vista para escritorio*/
+    /*Oculto en vista para escritorio
     #busqueda,
     #hamburguesa {
         display: none;
     }
 
-    /*Acomodo menú en vista esc.*/
+    /*Acomodo menú en vista esc.
     nav {
         display: flex;
         justify-content: center;
     }
 
-    /*doy formato de tamaño en vista escritorio*/
+    /*doy formato de tamaño en vista escritorio
     article {
         display: flex;
         flex-direction: row;
@@ -365,6 +293,4 @@ h2 {
         margin-left: 15px;
         margin-right: 15px;
     }
-}
-
-
+}/*

@@ -148,7 +148,16 @@ nav {
 }
 
 
+/*Carrousel de marcas*/
+.marcas{
+    width: 100px;
+    height: 100px;
+    margin-left: 46%;
+}
 
+.placeholder-glow {
+    color: rgb(245, 160, 212);
+}
 
 /*Modificaciones puntuales a realizar más adelante*/
 

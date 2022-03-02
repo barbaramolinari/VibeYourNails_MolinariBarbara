@@ -1,4 +1,7 @@
+@charset "UTF-8";
 /*variables*/
+/*Generación de mapa*/
+/*Declaración de mixins*/
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 /*fuente titulos*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap");
@@ -49,8 +52,8 @@ div {
 }
 
 div .imagenes img {
+  height: 350px;
   width: 300px;
-  height: 300px;
   margin-top: 20px;
 }
 
@@ -90,8 +93,8 @@ div {
 }
 
 div img.marcas {
-  width: 100px;
   height: 100px;
+  width: 100px;
   margin-left: 46%;
 }
 
@@ -110,4 +113,102 @@ div footer {
   color: black;
   text-align: center;
   margin-top: 15px;
+}
+
+/*Redes Sociales*/
+div.redes {
+  background-color: white;
+  display: block;
+  margin-left: 100px;
+}
+
+div.redes img.social {
+  height: 50px;
+  width: 50px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*formulario*/
+form.newform {
+  background-color: white;
+  margin: 20px;
+}
+
+form.newform h2.tituloForm {
+  font-family: "Bebas Neue", cursive;
+  font-size: 22px;
+  color: #e44688;
+}
+
+/*tarjetas servicios*/
+div.card-body p.card-text {
+  color: #e44688;
+  font-family: "Bebas Neue", cursive;
+}
+
+/*Mapa*/
+div.mapa iframe.mapita {
+  height: 150px;
+  width: 350px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 20px;
+}
+
+/*testimonios*/
+div.col-md-4 img {
+  height: 150px;
+  width: 200px;
+}
+
+div.col-md-8 p.card-text {
+  font-family: "Roboto Slab", serif;
+}
+
+/*Trabaja con nosotros*/
+div.work {
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+div.work div.texto {
+  font-family: "Roboto Slab", serif;
+  color: black;
+}
+
+div.work div.botoncito button.btn.btn-primary.mb-3 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  color: #e44688;
+  border-color: #e44688;
+  background-color: white;
+  margin-top: 20px;
+}
+
+div.work div.botoncito button.btn.btn-primary.mb-3:hover {
+  background-color: #e44688;
+  color: white;
+}
+
+/*Botones pie index*/
+div input.boton, div input.boton--nuevo {
+  background-color: white;
+  margin-top: 20px;
+  border-color: #e44688;
+  font-family: "Bebas Neue", cursive;
+  font-size: 20px;
+  color: #e44688;
+  border-radius: 5px;
+}
+
+div input.boton--nuevo {
+  background-color: #e44688;
+  color: white;
 }

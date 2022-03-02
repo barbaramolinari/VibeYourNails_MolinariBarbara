@@ -5,6 +5,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*fuente titulos*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap'); /*fuente nueva cuerpo*/
 
+
+
 /*cabecera titulo*/
 header {
     background-color: white;
@@ -57,15 +59,14 @@ div {
     background-color: white;
     .imagenes {
         img {
-            width: 300px;
-            height: 300px;
-            margin-top: 20px;
+            @include sizes (300px, 350px);
+            margin-top: map-get($estilos, marginT);
         }
     }
 
     .texto {
-        font-size: 16px;
-        margin-top: 20px;
+        font-size: map-get($estilos, fuenteT);
+        margin-top: map-get($estilos, marginT);
         font-family: $body-font;
         color: black;
     }
@@ -97,8 +98,7 @@ p.placeholder-glow {
 div {
     background-color: white;
     img.marcas {
-        width: 100px;
-        height: 100px;
+        @include sizes (100px, 100px);
         margin-left: 46%;
     }
 }
@@ -107,7 +107,7 @@ div {
 
 div {
     article {
-        font-size: 16px;
+        font-size: map-get($estilos, fuenteT);
         margin-top: 20px;
         font-family: $body-font;
         color: black;
@@ -119,5 +119,116 @@ div {
             color: black;
             text-align: center;
             margin-top: 15px;
+    }
+}
+
+/*Redes Sociales*/
+
+div.redes {
+    background-color: white;
+    display: block;
+    margin-left: 100px;
+    img.social {
+        @include sizes (50px, 50px);
+        margin-top: map-get($estilos, marginT);
+        margin-bottom: 20px;
+    }
+}
+
+
+/*formulario*/
+form.newform {
+    background-color: white;
+    margin: 20px;
+    h2.tituloForm {
+        font-family: $title-font;
+        font-size: 22px;
+        color: $pink-letter;
+    }
+}
+
+/*tarjetas servicios*/
+div.card-body{
+    p.card-text {
+        color: $pink-letter;
+        font-family: $title-font;
+    }
+}
+
+/*Mapa*/
+
+div.mapa {
+    iframe.mapita {
+        @include sizes (350px, 150px); 
+        margin-top: map-get($estilos, marginT);
+        margin-left: 10px;
+        margin-right: 20px;
+    }
+}
+
+/*testimonios*/ 
+div.col-md-4{
+    img {
+        @include sizes (200px, 150px); 
+    }
+}
+
+div.col-md-8{
+    p.card-text{
+        font-family: $body-font;
+    }
+}
+
+/*Trabaja con nosotros*/
+div.work {
+    margin-top: map-get($estilos, marginT);
+    margin-left: 10px;
+    margin-right: 10px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    div.texto {
+        font-family: $body-font;
+        color: black;
+    }
+    div.botoncito {
+        button.btn.btn-primary.mb-3 {
+            font-family: $title-font;
+            font-size: 20px; 
+            color: $pink-letter;
+            border-color: $pink-letter;
+            background-color: white;
+            margin-top: map-get($estilos, marginT);
+            &:hover {
+                background-color: $pink-letter;
+                color: white;
+            }
+        }
+    }
+}
+
+/*Botones pie index*/
+div {
+    input.boton{
+        background-color: white;
+        margin-top: map-get($estilos, marginT);
+        border-color: $pink-letter;
+        font-family: $title-font;
+        font-size: 20px; 
+        color: $pink-letter;
+        border-radius: 5px;
+
+    }
+}
+
+div {
+    input.boton--nuevo {
+        @extend .boton;
+        background-color: $pink-letter;
+        color: white;
+        
+
     }
 }

@@ -1,3 +1,17 @@
 $title-font: 'Bebas Neue', cursive;
 $body-font: 'Roboto Slab', serif;
 $pink-letter: rgb(228, 70, 136);
+
+/*Generación de mapa*/
+$estilos: (
+    marginT: 20px,
+    fuenteT: 16px,
+    fondoC: white,
+);
+
+/*Declaración de mixins*/
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+

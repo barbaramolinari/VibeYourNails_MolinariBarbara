@@ -145,6 +145,7 @@ form.newform {
         font-size: 22px;
         color: $pink-letter;
     }
+
 }
 
 /*tarjetas servicios*/
@@ -181,6 +182,7 @@ div.col-md-8{
 
 /*Trabaja con nosotros*/
 div.work {
+    background: url(imagenes/background_work2.jpg) center center no-repeat;
     margin-top: map-get($estilos, marginT);
     margin-left: 10px;
     margin-right: 10px;
@@ -192,14 +194,16 @@ div.work {
     div.texto {
         font-family: $body-font;
         color: black;
+        background-color: transparent;
     }
     div.botoncito {
+        background-color: transparent;
         button.btn.btn-primary.mb-3 {
             font-family: $title-font;
             font-size: 20px; 
             color: $pink-letter;
             border-color: $pink-letter;
-            background-color: white;
+            background-color: transparent;
             margin-top: map-get($estilos, marginT);
             &:hover {
                 background-color: $pink-letter;
@@ -230,5 +234,70 @@ div {
         color: white;
         
 
+    }
+}
+
+/*Propiedades nuevo slide*/
+
+@mixin white-gradient {
+	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+}
+
+$animationSpeed: 40s;
+
+// Animación
+@keyframes scroll {
+	0% { transform: translateX(0); }
+	100% { transform: translateX(calc(-250px * 7))}
+}
+
+
+// Estilo
+.slider {
+	background: white;
+	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+	height: 100px;
+	margin: 20px auto auto auto;
+	overflow:hidden;
+	position: relative;
+	width: 960px;
+	
+	&::before,
+	&::after {
+		@include white-gradient;
+		content: "";
+		height: 100px;
+		position: absolute;
+		width: 200px;
+		z-index: 2;
+	}
+	
+	&::after {
+		right: 0;
+		top: 0;
+		transform: rotateZ(180deg);
+	}
+
+	&::before {
+		left: 0;
+		top: 0;
+	}
+	
+	.slide-track {
+		animation: scroll $animationSpeed linear infinite;
+		display: flex;
+		width: calc(250px * 14);
+	}
+	
+	.slide {
+		height: 100px;
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 900px) {
+    .slider,
+    .marcas {
+        display: none;
     }
 }

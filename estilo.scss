@@ -1,303 +1,302 @@
-
 /*variables*/
 
 @import "_variables";
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap'); /*fuente titulos*/
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap'); /*fuente nueva cuerpo*/
-
-
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"); /*fuente titulos*/
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap"); /*fuente nueva cuerpo*/
 
 /*cabecera titulo*/
 header {
-    background-color: white;
-    justify-content: center;
-    padding: 30px;
-    div{
-        h1.titulo{
-            font-family: $title-font;
-            color: $pink-letter;
-            font-size: 80px;
-            text-align: center;
-            padding: 18px;
-            margin-top: 18px;
-        }
+  background-color: white;
+  justify-content: center;
+  padding: 30px;
+  div {
+    h1.titulo {
+      font-family: $title-font;
+      color: $pink-letter;
+      font-size: 80px;
+      text-align: center;
+      padding: 18px;
+      margin-top: 18px;
     }
+  }
 }
 
 /*menu busqueda*/
 div {
-    ul {
-        li {
-            a.nav-link{
-                color: $pink-letter;
-                font-family: $title-font;
-                font-size: 20px;
-            }
-        }
+  ul {
+    li {
+      a.nav-link {
+        color: $pink-letter;
+        font-family: $title-font;
+        font-size: 20px;
+      }
     }
+  }
 }
 
 /*boton busqueda*/
 
-form.d-flex {  
-    margin-right: 15px;
-        button.btn.btn-outline-success { 
-            font-family: $title-font;
-            font-size: 20px; 
-            color: $pink-letter;
-            border-color: $pink-letter;
-            &:hover {
-                background-color: $pink-letter;
-                color: white;
-            }
-        }
+form.d-flex {
+  margin-right: 15px;
+  button.btn.btn-outline-success {
+    font-family: $title-font;
+    font-size: 20px;
+    color: $pink-letter;
+    border-color: $pink-letter;
+    &:hover {
+      background-color: $pink-letter;
+      color: white;
+    }
+  }
 }
 
 /*contenido cuerpo index*/
 
 div {
-    background-color: white;
-    .imagenes {
-        img {
-            @include sizes (300px, 350px);
-            margin-top: map-get($estilos, marginT);
-        }
+  background-color: white;
+  .imagenes {
+    img {
+      @include sizes(300px, 350px);
+      margin-top: map-get($estilos, marginT);
     }
+  }
 
-    .texto {
-        font-size: map-get($estilos, fuenteT);
-        margin-top: map-get($estilos, marginT);
-        font-family: $body-font;
-        color: black;
-    }
+  .texto {
+    font-size: map-get($estilos, fuenteT);
+    margin-top: map-get($estilos, marginT);
+    font-family: $body-font;
+    color: black;
+  }
 }
 
 /*titulo secundario*/
 div {
-    background-color: white;
-    h2 {
-        font-family: 'Bebas Neue', cursive;
-        color: $pink-letter;
-        font-size: 22px;
-        text-align: center;
-        margin-top: 18px;
-        text-decoration: underline;
-    }
+  background-color: white;
+  h2 {
+    font-family: "Bebas Neue", cursive;
+    color: $pink-letter;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 18px;
+    text-decoration: underline;
+  }
 }
 
 /*barra glow*/
 p.placeholder-glow {
-    background-color: white;
-    span {
-        color: $pink-letter;
-    }
+  background-color: white;
+  span {
+    color: $pink-letter;
+  }
 }
 
 /*carrousel marcas*/
 
 div {
-    background-color: white;
-    img.marcas {
-        @include sizes (100px, 100px);
-        margin-left: 46%;
-    }
+  background-color: white;
+  img.marcas {
+    @include sizes(100px, 100px);
+    margin-left: 46%;
+  }
 }
 
 /*footer y ultimo articulo*/
 
 div {
-    article {
-        font-size: map-get($estilos, fuenteT);
-        margin-top: 20px;
-        font-family: $body-font;
-        color: black;
-    }
-    footer {
-            justify-content: center;
-            font-family: 'Roboto Slab', serif;
-            font-size: 12px;
-            color: black;
-            text-align: center;
-            margin-top: 15px;
-    }
+  article {
+    font-size: map-get($estilos, fuenteT);
+    margin-top: 20px;
+    font-family: $body-font;
+    color: black;
+  }
+  footer {
+    justify-content: center;
+    font-family: "Roboto Slab", serif;
+    font-size: 12px;
+    color: black;
+    text-align: center;
+    margin-top: 15px;
+  }
 }
 
 /*Redes Sociales*/
 
 div.redes {
-    background-color: white;
-    display: block;
-    margin-left: 100px;
-    img.social {
-        @include sizes (50px, 50px);
-        margin-top: map-get($estilos, marginT);
-        margin-bottom: 20px;
-    }
+  background-color: white;
+  display: block;
+  margin-left: 100px;
+  img.social {
+    @include sizes(50px, 50px);
+    margin-top: map-get($estilos, marginT);
+    margin-bottom: 20px;
+  }
 }
-
 
 /*formulario*/
 form.newform {
-    background-color: white;
-    margin: 20px;
-    h2.tituloForm {
-        font-family: $title-font;
-        font-size: 22px;
-        color: $pink-letter;
-    }
-
+  background-color: white;
+  margin: 20px;
+  h2.tituloForm {
+    font-family: $title-font;
+    font-size: 22px;
+    color: $pink-letter;
+  }
 }
 
 /*tarjetas servicios*/
-div.card-body{
-    p.card-text {
-        color: $pink-letter;
-        font-family: $title-font;
-    }
+div.card-body {
+  p.card-text {
+    color: $pink-letter;
+    font-family: $title-font;
+  }
 }
 
 /*Mapa*/
 
 div.mapa {
-    iframe.mapita {
-        @include sizes (350px, 150px); 
-        margin-top: map-get($estilos, marginT);
-        margin-left: 10px;
-        margin-right: 20px;
-    }
+  iframe.mapita {
+    @include sizes(350px, 150px);
+    margin-top: map-get($estilos, marginT);
+    margin-left: 10px;
+    margin-right: 20px;
+  }
 }
 
-/*testimonios*/ 
-div.col-md-4{
-    img {
-        @include sizes (200px, 150px); 
-    }
+/*testimonios*/
+div.col-md-4 {
+  img {
+    @include sizes(200px, 150px);
+  }
 }
 
-div.col-md-8{
-    p.card-text{
-        font-family: $body-font;
-    }
+div.col-md-8 {
+  p.card-text {
+    font-family: $body-font;
+  }
 }
 
 /*Trabaja con nosotros*/
 div.work {
-    background: url(imagenes/background_work2.jpg) center center no-repeat;
-    margin-top: map-get($estilos, marginT);
-    margin-left: 10px;
-    margin-right: 10px;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    div.texto {
-        font-family: $body-font;
-        color: black;
-        background-color: transparent;
+  background: url(imagenes/background_work2.jpg) center center no-repeat;
+  margin-top: map-get($estilos, marginT);
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  div.texto {
+    font-family: $body-font;
+    color: black;
+    background-color: transparent;
+  }
+  div.botoncito {
+    background-color: transparent;
+    button.btn.btn-primary.mb-3 {
+      font-family: $title-font;
+      font-size: 20px;
+      color: $pink-letter;
+      border-color: $pink-letter;
+      background-color: transparent;
+      margin-top: map-get($estilos, marginT);
+      &:hover {
+        background-color: $pink-letter;
+        color: white;
+      }
     }
-    div.botoncito {
-        background-color: transparent;
-        button.btn.btn-primary.mb-3 {
-            font-family: $title-font;
-            font-size: 20px; 
-            color: $pink-letter;
-            border-color: $pink-letter;
-            background-color: transparent;
-            margin-top: map-get($estilos, marginT);
-            &:hover {
-                background-color: $pink-letter;
-                color: white;
-            }
-        }
-    }
+  }
 }
 
 /*Botones pie index*/
 div {
-    input.boton{
-        background-color: white;
-        margin-top: map-get($estilos, marginT);
-        border-color: $pink-letter;
-        font-family: $title-font;
-        font-size: 20px; 
-        color: $pink-letter;
-        border-radius: 5px;
-
-    }
+  input.boton {
+    background-color: white;
+    margin-top: map-get($estilos, marginT);
+    border-color: $pink-letter;
+    font-family: $title-font;
+    font-size: 20px;
+    color: $pink-letter;
+    border-radius: 5px;
+  }
 }
 
 div {
-    input.boton--nuevo {
-        @extend .boton;
-        background-color: $pink-letter;
-        color: white;
-        
-
-    }
+  input.boton--nuevo {
+    @extend .boton;
+    background-color: $pink-letter;
+    color: white;
+  }
 }
 
 /*Propiedades nuevo slide*/
 
 @mixin white-gradient {
-	background: linear-gradient(to right,  rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%);
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 0) 100%
+  );
 }
 
 $animationSpeed: 40s;
 
 // Animación
 @keyframes scroll {
-	0% { transform: translateX(0); }
-	100% { transform: translateX(calc(-250px * 7))}
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
-
 
 // Estilo
 .slider {
-	background: white;
-	box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
-	height: 100px;
-	margin: 20px auto auto auto;
-	overflow:hidden;
-	position: relative;
-	width: 960px;
-	
-	&::before,
-	&::after {
-		@include white-gradient;
-		content: "";
-		height: 100px;
-		position: absolute;
-		width: 200px;
-		z-index: 2;
-	}
-	
-	&::after {
-		right: 0;
-		top: 0;
-		transform: rotateZ(180deg);
-	}
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: 20px auto auto auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
 
-	&::before {
-		left: 0;
-		top: 0;
-	}
-	
-	.slide-track {
-		animation: scroll $animationSpeed linear infinite;
-		display: flex;
-		width: calc(250px * 14);
-	}
-	
-	.slide {
-		height: 100px;
-		width: 250px;
-	}
+  &::before,
+  &::after {
+    @include white-gradient;
+    content: "";
+    height: 100px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+  }
+
+  &::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+  }
+
+  &::before {
+    left: 0;
+    top: 0;
+  }
+
+  .slide-track {
+    animation: scroll $animationSpeed linear infinite;
+    display: flex;
+    width: calc(250px * 14);
+  }
+
+  .slide {
+    height: 100px;
+    width: 250px;
+  }
 }
 
 @media screen and (max-width: 900px) {
-    .slider,
-    .marcas {
-        display: none;
-    }
+  .slider,
+  .marcas {
+    display: none;
+  }
 }

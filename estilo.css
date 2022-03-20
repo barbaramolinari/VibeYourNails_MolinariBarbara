@@ -7,54 +7,166 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap");
 /*fuente nueva cuerpo*/
 /*cabecera titulo*/
-header {
+body {
+  background-color: white;
+}
+
+body div.iconos {
+  color: #f5c6bc;
+  text-align: right;
+}
+
+body div.iconos i {
+  margin-left: 5px;
+}
+
+body header {
   background-color: white;
   justify-content: center;
   padding: 30px;
 }
 
-header div h1.titulo {
-  font-family: "Bebas Neue", cursive;
-  color: #e44688;
-  font-size: 80px;
-  text-align: center;
-  padding: 18px;
-  margin-top: 18px;
-}
-
 /*menu busqueda*/
-div ul li a.nav-link {
-  color: #e44688;
+nav button.navbar-toggler {
+  background-color: #f5c6bc;
+}
+
+nav .logoTitle {
+  height: 160px;
+  width: 310px;
+}
+
+nav #navbarNav {
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+}
+
+nav #navbarNav ul.navbar-nav {
+  white-space: nowrap;
+}
+
+nav #navbarNav ul.navbar-nav li a.nav-link {
+  color: black;
   font-family: "Bebas Neue", cursive;
   font-size: 20px;
 }
 
-/*boton busqueda*/
-form.d-flex {
-  margin-right: 15px;
+nav #navbarNav ul.navbar-nav li a.nav-link:hover {
+  color: #f5c6bc;
 }
 
-form.d-flex button.btn.btn-outline-success {
+/*Imágenes de arriba*/
+div.imagenSupUno {
+  background-image: url(imagenes/background01.png);
+  margin-top: 10px;
+  background-position: 15% center;
+  height: 300px;
+}
+
+div.imagenSupUno h1 {
   font-family: "Bebas Neue", cursive;
-  font-size: 20px;
-  color: #e44688;
-  border-color: #e44688;
-}
-
-form.d-flex button.btn.btn-outline-success:hover {
-  background-color: #e44688;
+  font-size: 100px;
   color: white;
+  align-content: center;
+  margin-left: 18px;
+}
+
+div.imagenSupUno p {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+  font-style: italic;
+  margin-left: 18px;
+}
+
+div.imagenSupDos {
+  background-image: url(imagenes/background02.png);
+  margin-top: 10px;
+  background-position: bottom;
+  height: 300px;
+}
+
+div.imagenSupDos h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 100px;
+  color: black;
+  align-content: center;
+  margin-left: 18px;
+}
+
+div.imagenSupDos p {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  font-style: italic;
+  margin-left: 18px;
+}
+
+div.imagenSupTres {
+  background-image: url(imagenes/background03.png);
+  margin-top: 10px;
+  background-position: bottom;
+  height: 300px;
+}
+
+div.imagenSupTres h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 100px;
+  color: black;
+  align-content: center;
+  margin-left: 18px;
+}
+
+div.imagenSupTres p {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  font-style: italic;
+  margin-left: 18px;
+}
+
+div.imagenSupCua {
+  background-image: url(imagenes/background04.png);
+  margin-top: 10px;
+  background-position: bottom;
+  height: 300px;
+}
+
+div.imagenSupCua h1 {
+  font-family: "Bebas Neue", cursive;
+  font-size: 100px;
+  color: black;
+  align-content: center;
+  margin-left: 18px;
+}
+
+div.imagenSupCua p {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
+  color: black;
+  text-align: center;
+  font-style: italic;
+  margin-left: 18px;
 }
 
 /*contenido cuerpo index*/
-div {
-  background-color: white;
-}
-
-div .imagenes img {
+div .imagenes img.unia,
+div .imagenes img.me {
   height: 350px;
   width: 300px;
   margin-top: 20px;
+  border-radius: 20px;
+}
+
+div .imagenes img.giftcard {
+  height: 150px;
+  width: 320px;
+  margin-top: 20px;
+  border-radius: 20px;
+  border: #f5c6bc solid;
 }
 
 div .texto {
@@ -62,6 +174,17 @@ div .texto {
   margin-top: 20px;
   font-family: "Roboto Slab", serif;
   color: black;
+  font-style: italic;
+}
+
+div.heart {
+  text-align: center;
+}
+
+div.heart i {
+  color: #f5c6bc;
+  font-size: 20px;
+  margin-top: 20px;
 }
 
 /*titulo secundario*/
@@ -71,62 +194,63 @@ div {
 
 div h2 {
   font-family: "Bebas Neue", cursive;
-  color: #e44688;
+  color: #f5c6bc;
   font-size: 22px;
   text-align: center;
   margin-top: 18px;
   text-decoration: underline;
 }
 
-/*barra glow*/
-p.placeholder-glow {
-  background-color: white;
-}
-
-p.placeholder-glow span {
-  color: #e44688;
-}
-
-/*carrousel marcas*/
-div {
-  background-color: white;
-}
-
-div img.marcas {
-  height: 100px;
-  width: 100px;
-  margin-left: 46%;
-}
-
-/*footer y ultimo articulo*/
+/*ultimo articulo index*/
 div article {
   font-size: 16px;
   margin-top: 20px;
   font-family: "Roboto Slab", serif;
   color: black;
+  font-style: italic;
 }
 
-div footer {
+/*Footer*/
+footer {
   justify-content: center;
-  font-family: "Roboto Slab", serif;
+  font-family: "Bebas Neue", cursive;
   font-size: 12px;
   color: black;
   text-align: center;
   margin-top: 15px;
+  background-color: #f5c6bc;
+  height: 150px;
 }
 
-/*Redes Sociales*/
-div.redes {
-  background-color: white;
+footer #footerG {
+  background-color: #f5c6bc;
+}
+
+footer #footerP {
+  background-color: black;
+}
+
+/*Tarjetas cursos*/
+div.card img.card-img-top {
   display: block;
-  margin-left: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
-div.redes img.social {
-  height: 50px;
-  width: 50px;
-  margin-top: 20px;
-  margin-bottom: 20px;
+div.card div.card-body h5.card-title {
+  font-family: "Bebas Neue", cursive;
+  color: #f5c6bc;
+}
+
+div.card div.card-body p.card-text {
+  font-size: 16px;
+  font-family: "Roboto Slab", serif;
+  color: black;
+  font-style: italic;
+}
+
+div.card div.card-footer small {
+  text-align: right;
 }
 
 /*formulario*/
@@ -138,18 +262,39 @@ form.newform {
 form.newform h2.tituloForm {
   font-family: "Bebas Neue", cursive;
   font-size: 22px;
-  color: #e44688;
+  color: #f5c6bc;
+}
+
+form.newform #botonEnviar,
+form.newform #botonCheck {
+  background-color: #f5c6bc;
+  border-color: black;
+  color: black;
+  font-family: "Bebas Neue", cursive;
+}
+
+form.newform #botonEnviar:hover,
+form.newform #botonCheck:hover {
+  background-color: black;
+  color: white;
+}
+
+form.newform div label.form-label,
+form.newform div label.form-check-label {
+  font-family: "Roboto Slab", serif;
 }
 
 /*tarjetas servicios*/
-div.card-body p.card-text {
-  color: #e44688;
+div #textoServicios {
+  color: #f5c6bc;
   font-family: "Bebas Neue", cursive;
+  font-style: normal;
+  font-size: 18px;
 }
 
 /*Mapa*/
 div.mapa iframe.mapita {
-  height: 150px;
+  height: 200px;
   width: 350px;
   margin-top: 20px;
   margin-left: 10px;
@@ -157,23 +302,34 @@ div.mapa iframe.mapita {
 }
 
 /*testimonios*/
-div.col-md-4 img {
+.tarjetas {
+  display: flex;
+  justify-content: center;
+}
+
+.tarjetas div.col-md-4 img {
   height: 150px;
   width: 200px;
 }
 
-div.col-md-8 p.card-text {
+.tarjetas div.col-md-8 #personas {
   font-family: "Roboto Slab", serif;
+  color: black;
+}
+
+.tarjetas div.col-md-8 #personasPeq {
+  font-family: "Roboto Slab", serif;
+  font-size: 14px;
 }
 
 /*Trabaja con nosotros*/
 div.work {
-  background: url(imagenes/background_work2.jpg) center center no-repeat;
+  background: url(imagenes/backtrabaj.png) center center no-repeat;
   margin-top: 20px;
-  margin-left: 10px;
-  margin-right: 10px;
   display: flex;
   flex-wrap: nowrap;
+  margin-left: 10px;
+  margin-right: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -181,7 +337,7 @@ div.work {
 
 div.work div.texto {
   font-family: "Roboto Slab", serif;
-  color: black;
+  color: white;
   background-color: transparent;
 }
 
@@ -192,30 +348,14 @@ div.work div.botoncito {
 div.work div.botoncito button.btn.btn-primary.mb-3 {
   font-family: "Bebas Neue", cursive;
   font-size: 20px;
-  color: #e44688;
-  border-color: #e44688;
+  color: #f5c6bc;
+  border-color: #f5c6bc;
   background-color: transparent;
   margin-top: 20px;
 }
 
 div.work div.botoncito button.btn.btn-primary.mb-3:hover {
-  background-color: #e44688;
-  color: white;
-}
-
-/*Botones pie index*/
-div input.boton, div input.boton--nuevo {
-  background-color: white;
-  margin-top: 20px;
-  border-color: #e44688;
-  font-family: "Bebas Neue", cursive;
-  font-size: 20px;
-  color: #e44688;
-  border-radius: 5px;
-}
-
-div input.boton--nuevo {
-  background-color: #e44688;
+  background-color: #f5c6bc;
   color: white;
 }
 
@@ -270,9 +410,64 @@ div input.boton--nuevo {
   width: 250px;
 }
 
-@media screen and (max-width: 900px) {
+/*personalizar slide marcas*/
+div {
+  background-color: white;
+}
+
+div img.marcas {
+  height: 100px;
+  width: 100px;
+  margin-left: 46%;
+}
+
+/*Vistas personalizadas*/
+@media screen and (min-width: 360px) {
   .slider,
   .marcas {
     display: none;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .slider,
+  .marcas {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .slider,
+  .marcas {
+    display: block;
+  }
+  .heart {
+    display: none;
+  }
+  .imagenSupUno,
+  .imagenSupDos,
+  .imagenSupTres,
+  .imagenSupCua {
+    height: 500px !important;
+  }
+  .imagenSupUno h1.imagengrande,
+  .imagenSupDos h1.imagengrande,
+  .imagenSupTres h1.imagengrande,
+  .imagenSupCua h1.imagengrande {
+    font-size: 200px;
+  }
+  .imagenSupUno p.textogrande,
+  .imagenSupDos p.textogrande,
+  .imagenSupTres p.textogrande,
+  .imagenSupCua p.textogrande {
+    font-size: 18px;
+  }
+  div .imagenes div.giftdiv img.giftcard {
+    height: 250px;
+    width: 450px;
+  }
+  div.mapa iframe.mapita {
+    height: 250px;
+    width: 500px;
   }
 }

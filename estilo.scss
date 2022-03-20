@@ -4,60 +4,158 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"); /*fuente titulos*/
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@200&display=swap"); /*fuente nueva cuerpo*/
 
+
 /*cabecera titulo*/
-header {
+body {
   background-color: white;
-  justify-content: center;
-  padding: 30px;
-  div {
-    h1.titulo {
-      font-family: $title-font;
-      color: $pink-letter;
-      font-size: 80px;
-      text-align: center;
-      padding: 18px;
-      margin-top: 18px;
+  div.iconos {
+    color: $pink-letter;
+    text-align: right;
+    i {
+      margin-left: 5px;
     }
+  }
+  header {
+    background-color: white;
+    justify-content: center;
+    padding: 30px;
   }
 }
 
 /*menu busqueda*/
-div {
-  ul {
-    li {
-      a.nav-link {
-        color: $pink-letter;
-        font-family: $title-font;
-        font-size: 20px;
+nav {
+  button.navbar-toggler{
+    background-color: $pink-letter;
+  }
+  .logoTitle {
+    @include sizes(310px, 160px);
+  }
+  #navbarNav {
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    ul.navbar-nav {
+      white-space: nowrap;
+      li {
+        a.nav-link {
+          color: black;
+          font-family: $title-font;
+          font-size: 20px;
+          
+          &:hover {
+            color: $pink-letter;
+          }
+        }
       }
     }
   }
 }
 
-/*boton busqueda*/
+/*Imágenes de arriba*/
 
-form.d-flex {
-  margin-right: 15px;
-  button.btn.btn-outline-success {
+div.imagenSupUno {
+  background-image: url(imagenes/background01.png);
+  margin-top: 10px;
+  background-position: 15% center;
+  height: 300px;
+  h1 {
     font-family: $title-font;
-    font-size: 20px;
-    color: $pink-letter;
-    border-color: $pink-letter;
-    &:hover {
-      background-color: $pink-letter;
-      color: white;
-    }
+    font-size: 100px;
+    color: white;
+    align-content: center;
+    margin-left: 18px;
+  }
+  p {
+    font-family: $body-font;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+    font-style: italic;
+    margin-left: 18px;
   }
 }
+
+div.imagenSupDos {
+  background-image: url(imagenes/background02.png);
+  margin-top: 10px;
+  background-position: bottom; 
+  height: 300px;
+  h1 {
+    font-family: $title-font;
+    font-size: 100px;
+    color: black;
+    align-content: center;
+    margin-left: 18px;
+  }
+  p {
+    font-family: $body-font;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    margin-left: 18px;
+  }
+}
+
+div.imagenSupTres {
+  background-image: url(imagenes/background03.png);
+  margin-top: 10px;
+  background-position: bottom; 
+  height: 300px;
+  h1 {
+    font-family: $title-font;
+    font-size: 100px;
+    color: black;
+    align-content: center;
+    margin-left: 18px;
+  }
+  p {
+    font-family: $body-font;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    margin-left: 18px;
+  }
+}
+
+div.imagenSupCua {
+  background-image: url(imagenes/background04.png);
+  margin-top: 10px;
+  background-position: bottom; 
+  height: 300px;
+  h1 {
+    font-family: $title-font;
+    font-size: 100px;
+    color: black;
+    align-content: center;
+    margin-left: 18px;
+  }
+  p {
+    font-family: $body-font;
+    font-size: 14px;
+    color: black;
+    text-align: center;
+    font-style: italic;
+    margin-left: 18px;
+  }
+}
+
 
 /*contenido cuerpo index*/
 
 div {
-  background-color: white;
   .imagenes {
-    img {
+    img.unia,
+    img.me {
       @include sizes(300px, 350px);
-      margin-top: map-get($estilos, marginT);
+      margin-top: map-get($estilos, marginT); 
+      border-radius: 20px;
+    }
+    img.giftcard {
+      @include sizes(320px, 150px);
+      margin-top: map-get($estilos, marginT); 
+      border-radius: 20px;
+      border: $pink-letter solid;
     }
   }
 
@@ -66,6 +164,16 @@ div {
     margin-top: map-get($estilos, marginT);
     font-family: $body-font;
     color: black;
+    font-style: italic;
+  }
+}
+
+div.heart {
+  text-align: center;
+  i {
+    color: $pink-letter;
+    font-size: 20px;
+    margin-top: map-get($estilos, marginT);
   }
 }
 
@@ -82,25 +190,9 @@ div {
   }
 }
 
-/*barra glow*/
-p.placeholder-glow {
-  background-color: white;
-  span {
-    color: $pink-letter;
-  }
-}
 
-/*carrousel marcas*/
 
-div {
-  background-color: white;
-  img.marcas {
-    @include sizes(100px, 100px);
-    margin-left: 46%;
-  }
-}
-
-/*footer y ultimo articulo*/
+/*ultimo articulo index*/
 
 div {
   article {
@@ -108,29 +200,55 @@ div {
     margin-top: 20px;
     font-family: $body-font;
     color: black;
-  }
-  footer {
-    justify-content: center;
-    font-family: "Roboto Slab", serif;
-    font-size: 12px;
-    color: black;
-    text-align: center;
-    margin-top: 15px;
+    font-style: italic;
   }
 }
 
-/*Redes Sociales*/
-
-div.redes {
-  background-color: white;
-  display: block;
-  margin-left: 100px;
-  img.social {
-    @include sizes(50px, 50px);
-    margin-top: map-get($estilos, marginT);
-    margin-bottom: 20px;
+/*Footer*/
+footer {
+  justify-content: center;
+  font-family: $title-font;
+  font-size: 12px;
+  color: black;
+  text-align: center;
+  margin-top: 15px;
+  background-color: $pink-letter;
+  height: 150px;
+  #footerG {
+    background-color: $pink-letter;
+  }
+  #footerP {
+    background-color: black;
   }
 }
+
+/*Tarjetas cursos*/
+
+div.card {
+  img.card-img-top{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  div.card-body {
+    h5.card-title {
+      font-family: $title-font;
+      color: $pink-letter;
+    }
+    p.card-text {
+      font-size: map-get($estilos, fuenteT);
+      font-family: $body-font;
+      color: black;
+      font-style: italic;
+    }
+  }
+  div.card-footer {
+    small {
+      text-align: right;
+    }
+  }
+}
+
 
 /*formulario*/
 form.newform {
@@ -141,13 +259,32 @@ form.newform {
     font-size: 22px;
     color: $pink-letter;
   }
+  #botonEnviar,
+  #botonCheck {
+    background-color: $pink-letter;
+    border-color: black;
+    color: black;
+    font-family: $title-font;
+    &:hover {
+      background-color: black;
+      color: white;
+  }
+}
+  div {
+    label.form-label,
+    label.form-check-label {
+      font-family: $body-font;
+    }
+  }
 }
 
-/*tarjetas servicios*/
-div.card-body {
-  p.card-text {
+/*tarjetas servicios*/ 
+div {
+  #textoServicios {
     color: $pink-letter;
     font-family: $title-font;
+    font-style: normal;
+    font-size: 18px;
   }
 }
 
@@ -155,7 +292,7 @@ div.card-body {
 
 div.mapa {
   iframe.mapita {
-    @include sizes(350px, 150px);
+    @include sizes(350px, 200px);
     margin-top: map-get($estilos, marginT);
     margin-left: 10px;
     margin-right: 20px;
@@ -163,32 +300,41 @@ div.mapa {
 }
 
 /*testimonios*/
-div.col-md-4 {
-  img {
-    @include sizes(200px, 150px);
+.tarjetas {
+  display: flex;
+  justify-content: center;
+  div.col-md-4 {
+    img {
+      @include sizes(200px, 150px);
+    }
   }
-}
 
-div.col-md-8 {
-  p.card-text {
-    font-family: $body-font;
+  div.col-md-8 {
+    #personas {
+      font-family: $body-font;
+      color: black;
+    }
+    #personasPeq {
+      font-family: $body-font;
+      font-size: 14px;
+    }
   }
 }
 
 /*Trabaja con nosotros*/
 div.work {
-  background: url(imagenes/background_work2.jpg) center center no-repeat;
+  background: url(imagenes/backtrabaj.png) center center no-repeat;
   margin-top: map-get($estilos, marginT);
-  margin-left: 10px;
-  margin-right: 10px;
   display: flex;
   flex-wrap: nowrap;
+  margin-left: 10px;
+  margin-right: 10px;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   div.texto {
     font-family: $body-font;
-    color: black;
+    color: white;
     background-color: transparent;
   }
   div.botoncito {
@@ -208,26 +354,6 @@ div.work {
   }
 }
 
-/*Botones pie index*/
-div {
-  input.boton {
-    background-color: white;
-    margin-top: map-get($estilos, marginT);
-    border-color: $pink-letter;
-    font-family: $title-font;
-    font-size: 20px;
-    color: $pink-letter;
-    border-radius: 5px;
-  }
-}
-
-div {
-  input.boton--nuevo {
-    @extend .boton;
-    background-color: $pink-letter;
-    color: white;
-  }
-}
 
 /*Propiedades nuevo slide*/
 
@@ -294,9 +420,73 @@ $animationSpeed: 40s;
   }
 }
 
-@media screen and (max-width: 900px) {
+
+/*personalizar slide marcas*/
+
+div {
+  background-color: white;
+  img.marcas {
+    @include sizes(100px, 100px);
+    margin-left: 46%;
+  }
+}
+
+/*Vistas personalizadas*/
+
+//celular
+@media screen and (min-width: 360px) {
   .slider,
   .marcas {
     display: none;
+  }
+}
+
+//tablet
+@media screen and (min-width: 600px) {
+  .slider,
+  .marcas {
+    display: none;
+  }
+}
+
+//monitor
+@media screen and (min-width: 1200px) {
+  .slider,
+  .marcas {
+    display:block;
+  }
+
+  .heart {
+    display: none;
+  }
+
+  .imagenSupUno,
+  .imagenSupDos,
+  .imagenSupTres,
+  .imagenSupCua {
+    height: 500px !important;
+    h1.imagengrande {
+      font-size: 200px;
+    }
+
+    p.textogrande {
+      font-size: 18px;
+    }
+  }
+
+  div {
+    .imagenes {
+      div.giftdiv {
+        img.giftcard {
+          @include sizes(450px, 250px);    
+        }
+      }
+    }
+  }
+
+  div.mapa {
+    iframe.mapita {
+      @include sizes(500px, 250px);
+    }
   }
 }
